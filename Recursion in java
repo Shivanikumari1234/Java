@@ -1,0 +1,21 @@
+// Use of Recursion in Java:
+//Find the sum of n natural number:
+public class A78 {
+    public static void main(String[] args)
+    {
+       A78 r=new A78();
+       int a=r.sum(10);
+       System.out.print("sum of n natural number :"+a);
+
+    }
+    int sum (int b)
+    {
+        if(b>0)
+        {
+            return b+sum(b-1);
+        }
+        else {
+            return 0;
+        }
+    }
+}
