@@ -1,0 +1,26 @@
+// Use of Recursion in Java:
+//Find the factorial of  any number:
+import java.util.Scanner;
+public class A78 {
+    public static void main(String[] args)
+    {
+        int b;
+        System.out.print("Enter any number");
+        Scanner r=new Scanner(System.in);
+       b=r.nextInt();
+        A78 sc= new A78();
+       int result =sc.fact(b);
+       System.out.print("factorial of number :"+result);
+
+    }
+    int fact(int b)
+    {
+        if(b==1)
+        {
+            return 1;
+        }
+        else {
+            return b*fact(b-1);
+        }
+    }
+}
